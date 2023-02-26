@@ -60,5 +60,5 @@ app.listen(port, () => {
 
 app.get('*', (req: Request, res: Response) => {
   // res.sendFile(path.join(publicPath, 'index.html'));
-  res.send("hello world");
+  res.send('hello world');
 });
