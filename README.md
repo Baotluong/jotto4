@@ -1,0 +1,1 @@
+Remaking JOTTO using Typescript.
