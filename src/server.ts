@@ -1,11 +1,11 @@
 // const path = require('path');
-import dotenv from "dotenv";
-import express, { Express, Request, Response } from "express";
+import dotenv from 'dotenv';
+import express, { Express, Request, Response } from 'express';
 
 dotenv.config();
 const app: Express = express();
 // const publicPath = path.join(__dirname, '..', 'public');
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || '3000';
 // const bodyParser = require('body-parser');
 // const dbAgent = require('./database/dbAgent');
 
@@ -13,7 +13,7 @@ const port = process.env.PORT || 3000;
 // app.use(bodyParser.urlencoded({ extended: false }));
 // app.use(bodyParser.json());
 
-const server = app.listen(port, () => {
+app.listen(port, () => {
   console.log('Server is up!');
 });
 
